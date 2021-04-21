@@ -25,7 +25,7 @@ method.
       int i = 0;
       BoutReal xpos, ypos, zpos;
       int ix, iy, iz;
-      Options* fast_output_options = globalOptions->getSection("fast_output");
+      Options* fast_output_options = Options::getRoot()->getSection("fast_output");
       while (true) {
         // Add more points if explicitly set in input file
         fast_output_options->get("xpos"+std::to_string(i), xpos, -1.);
